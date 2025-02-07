@@ -35,6 +35,9 @@
       "org\\apache\\hadoop\\": "src/",
       "org\\apache\\hadoop\\tools": "app/models/"
     }
+  },
+  "require-dev": {
+    "php-parallel-lint/php-parallel-lint": "^1.4",
+    "phpunit/phpunit": ">4 <12"
   }
-
 }
