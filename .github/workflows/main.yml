@@ -50,7 +50,9 @@ jobs:
         run: |
           composer update --prefer-dist --no-interaction --no-progress ${{ matrix.dependencies }}
 
-      - name: Lint
+      - name: Lint and test
         run: |
           vendor/bin/parallel-lint --exclude .git --exclude app --exclude vendor .
+          vendor/bin/phpunit --migrate-configuration
+          vendor/bin/phpunit --testdox
 
