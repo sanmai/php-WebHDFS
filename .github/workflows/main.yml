@@ -55,4 +55,3 @@ jobs:
           vendor/bin/parallel-lint --exclude .git --exclude app --exclude vendor .
           vendor/bin/phpunit --migrate-configuration
           vendor/bin/phpunit --testdox
-
