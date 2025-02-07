@@ -53,5 +53,5 @@ jobs:
       - name: Lint and test
         run: |
           vendor/bin/parallel-lint --exclude .git --exclude app --exclude vendor .
-          vendor/bin/phpunit --migrate-configuration
+          vendor/bin/phpunit --migrate-configuration || true
           vendor/bin/phpunit --testdox
